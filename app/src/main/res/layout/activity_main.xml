@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.movses.firstapp.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputs">
+
+        <EditText
+            android:inputType="number"
+            android:layout_weight="0.5"
+            android:id="@+id/firstnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="30dp"/>
+
+
+        <EditText
+            android:inputType="number"
+            android:layout_weight="0.5"
+            android:id="@+id/secondnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="30dp"/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+
+        android:id="@+id/resultnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputs"
+        android:layout_centerInParent="true"
+        android:textColor="?attr/actionModeSplitBackground"
+        android:textSize="50dp" />
+
+    <LinearLayout
+        android:layout_below="@id/resultnumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:layout_weight="0.2"
+            android:text="@string/plus"
+            android:id="@+id/plus"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <Button
+            android:layout_weight="0.2"
+            android:text="@string/minus"
+            android:id="@+id/minus"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <Button
+            android:layout_weight="0.2"
+            android:text="@string/x"
+            android:id="@+id/mult"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <Button
+            android:layout_weight="0.2"
+            android:text="@string/div"
+            android:id="@+id/div"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+    <Button
+
+        android:id="@+id/share"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="36dp"
+        android:text="@string/share" />
+
+    <Switch
+
+        android:id="@+id/mute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/share"
+        android:layout_marginLeft="11dp"
+        android:text="@string/mute" />
+
+
+</RelativeLayout>
